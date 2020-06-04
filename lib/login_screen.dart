@@ -70,7 +70,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: Text('Password'),
                 ),
                 TextField(
+                  obscureText: true,
                   decoration: InputDecoration(
+                    suffixIcon: Icon(Icons.remove_red_eye, color: color1,),
                     hintText: 'Enter your password',
                     contentPadding:
                         EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
@@ -84,6 +86,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                     ),
                     filled: true,
+                   
                     fillColor: Colors.grey.withOpacity(0.1),
                   ),
                 ),

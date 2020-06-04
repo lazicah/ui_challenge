@@ -93,6 +93,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
                 TextField(
                   decoration: InputDecoration(
+                    suffixIcon: Icon(
+                      Icons.remove_red_eye,
+                      color: color1,
+                    ),
                     hintText: 'Enter your password',
                     contentPadding:
                         EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
